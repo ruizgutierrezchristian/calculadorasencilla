@@ -52,10 +52,13 @@ public class Main {
         }
 
         if (opcion == 4) {
-            resultado = numero1 / numero2;
-            System.out.println("Resultado: " + resultado);
+            if (numero2 == 0) {
+                System.out.println("No se puede dividir entre 0");
+            } else {
+                resultado = numero1 / numero2;
+                System.out.println("Resultado: " + resultado);
+            }
         }
-
 
         if (opcion == 5){
             resultado = Math.pow(numero1,numero2);
